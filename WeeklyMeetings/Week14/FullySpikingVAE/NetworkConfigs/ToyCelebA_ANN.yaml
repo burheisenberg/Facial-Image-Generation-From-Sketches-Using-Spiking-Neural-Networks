@@ -1,0 +1,20 @@
+Network:
+  epochs: 50
+  batch_size: 40
+  n_steps: 8 # timestep
+  dataset: "ToyCelebA"
+  in_channels: 3
+  out_channels: 3
+  input_data_path: "C:/Users/Brhan/OneDrive/Belgeler/KuOnline/Spring24/Elec491/SNN/dataset/img_align_celeba_sketch"
+  output_data_path: "C:/Users/Brhan/OneDrive/Belgeler/KuOnline/Spring24/Elec491/SNN/dataset/img_align_celeba"
+  lr: 0.001
+  latent_dim: 128
+  input_size: 32
+  model: "VanillaVAE_large" # FSVAE or  FSVAE_large or FSVAE_small or FSAE_small
+  k: 20 # multiplier of channel
+  scheduled: False # whether to apply scheduled sampling
+  loss_func: 'kld' # mmd or kld + mse or l1 for autoencoder
+  spiking: False
+
+
+  
